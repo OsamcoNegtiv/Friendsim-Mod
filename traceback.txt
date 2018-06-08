@@ -1,74 +1,44 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 484, in script
-    call screen troll_select1
-  File "renpy/common/000statements.rpy", line 519, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/screens.rpy", line 353, in execute
-    screen troll_select1():
-  File "game/screens.rpy", line 353, in execute
-    screen troll_select1():
-  File "game/screens.rpy", line 366, in execute
-    screen troll_select3():
-  File "game/screens.rpy", line 366, in execute
-    screen troll_select3():
-  File "game/screens.rpy", line 368, in execute
-    imagebutton auto "volumes/volume3/images/charselect/skylla_button_%s.png" action Jump("skylla") pos (0, 0)
-Exception: Imagebutton does not have a idle image. (auto=u'volumes/volume3/images/charselect/skylla_button_%s.png').
+  File "game/script.rpy", line 485, in script
+    e ">Oh… uh… whom ar_E you? I thought you w_Er_E Osamco.<"
+IOError: Couldn't find file 'litletheme.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 484, in script
-    call screen troll_select1
-  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\ast.py", line 1828, in execute
-    self.call("execute")
-  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\ast.py", line 1816, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\statements.py", line 177, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 519, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\exports.py", line 2664, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "game/script.rpy", line 485, in script
+    e ">Oh… uh… whom ar_E you? I thought you w_Er_E Osamco.<"
+  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\ast.py", line 652, in execute
+    renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
+  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\exports.py", line 1180, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\character.py", line 1016, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\character.py", line 817, in do_display
+    **display_args)
+  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\character.py", line 566, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
   File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\ui.py", line 287, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\display\core.py", line 2635, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\display\core.py", line 3019, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\display\core.py", line 511, in visit_all
-    d.visit_all(callback)
-  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\display\core.py", line 511, in visit_all
-    d.visit_all(callback)
-  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\display\core.py", line 511, in visit_all
-    d.visit_all(callback)
-  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\display\screen.py", line 420, in visit_all
-    callback(self)
-  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\display\core.py", line 3019, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\display\screen.py", line 430, in per_interact
-    self.update()
-  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\display\screen.py", line 611, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 353, in execute
-    screen troll_select1():
-  File "game/screens.rpy", line 353, in execute
-    screen troll_select1():
-  File "game/screens.rpy", line 366, in execute
-    screen troll_select3():
-  File "game/screens.rpy", line 366, in execute
-    screen troll_select3():
-  File "game/screens.rpy", line 368, in execute
-    imagebutton auto "volumes/volume3/images/charselect/skylla_button_%s.png" action Jump("skylla") pos (0, 0)
-  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\ui.py", line 927, in _imagebutton
-    idle = choice(idle, idle_image, "idle", required=True)
-  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\ui.py", line 921, in choice
-    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
-Exception: Imagebutton does not have a idle image. (auto=u'volumes/volume3/images/charselect/skylla_button_%s.png').
+  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\display\core.py", line 3304, in interact_core
+    renpy.audio.audio.periodic()
+  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\audio\audio.py", line 976, in periodic_thread_main
+    periodic_pass()
+  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\audio\audio.py", line 920, in periodic_pass
+    c.periodic()
+  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\audio\audio.py", line 409, in periodic
+    topf = load(self.file_prefix + filename + self.file_suffix)
+  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\audio\audio.py", line 69, in load
+    rv = renpy.loader.load(fn)
+  File "C:\Users\Sam Collins\Desktop\PROGRAMING AND MODDING\Ren'py\renpy-6.99.14.3-sdk\renpy\loader.py", line 555, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'litletheme.mp3'.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.14.3.3347
 Hiveswap Friendsim 
-Fri May 25 15:42:43 2018
+Fri Jun 08 01:04:44 2018

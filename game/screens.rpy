@@ -757,6 +757,13 @@ screen about():
                 text "{i}\"Breeding Duties\"{/i}" text_align 1.0 min_width 500
 
             hbox:
+                text "Royalty Free Music - Live Laugh Love" text_align 0.0 min_width 200
+                text "{i}\"Litl_E's Theme\"{/i}" text_align 1.0 min_width 500
+
+                #Upbeat Orchestral Music Instrumental: Upbeat Instrumental Background Music, Fast Orchestra Music
+                #https://www.youtube.com/watch?v=WoZzz8b575A&ab_channel=RoyaltyFreeMusic-LiveLaughLove
+
+            hbox:
                 text "" text_align 0.0 min_width 200
                 text "{i}\"Moonshine\"{/i}" text_align 1.0 min_width 500
 

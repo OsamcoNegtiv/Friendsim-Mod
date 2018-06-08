@@ -476,9 +476,11 @@ label litle:
 
     window hide
 
+    play music "music/litletheme.mp3" loop
+
     show litle silhouette with moveinbottom
 
-    play sound "voices/VoiceLitle1.mp3"
+    voice "voices/VoiceLitle1.mp3"
 
     e ">Oh… uh… whom ar_E you? I thought you w_Er_E Osamco.<"
 
@@ -486,7 +488,7 @@ label litle:
 
     "You ask if you can step inside and have a quick rest, and maybe some medical attention."
 
-    play sound "voices/VoiceLitle2.mp3"
+    voice "voices/VoiceLitle2.mp3"
 
     e ">Alright. Just stay qui_Et and com_E with m_E.<"
 
@@ -497,6 +499,8 @@ label litle:
     show litle standing at default
 
     "You emerge in a room with similarly multicoloured furniture. Standing in the centre of the room is the troll you just met. You see the flashlight he was previously wielding sitting on a table near you."
+
+    voice "voices/VoiceLitle3.mp3"
 
     e ">W_Elcom_E to my hiv_E. I do not b_Eli_Ev_E w_E hav_E b_Ecom_E aquaint_Ed y_Et. My nam_E is Litl_E."
 
